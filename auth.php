@@ -135,11 +135,9 @@ class auth_plugin_emailusername extends auth_plugin_base {
 
     /**
      * Return a form to capture user details for account creation.
-     * This is used in /login/signup.php.
      * @return moodle_form A form which edits a record from the user table.
      */
     function signup_form() {
-        global $CFG;
         require_once('signup_form.php');
         return new login_signup_form(null, null, 'post', '', array('autocomplete'=>'on'));
     }

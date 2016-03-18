@@ -139,7 +139,7 @@ class auth_plugin_emailusername extends auth_plugin_base {
      */
     function signup_form() {
         global $CFG;
-        require_once($CFG->dirroot . "/auth/emailusername/signup_form.php"));
+        require_once($CFG->dirroot . "/auth/emailusername/signup_form.php");
         return new login_signup_form_emailusername(null, null, 'post', '', array('autocomplete'=>'on'));
     }
 

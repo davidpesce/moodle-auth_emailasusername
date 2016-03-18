@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Authentication Plugin: Email Authentication
+ * Authentication Plugin: Email Username Authentication
  *
- * @author Martin Dougiamas
- * @license http://www.gnu.org/copyleft/gpl.html GNU Public License
- * @package auth_email
+ * @copyright  2016 onwards David Pesce (http://exputo.com)
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package auth_emailusername
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -27,16 +27,16 @@ defined('MOODLE_INTERNAL') || die();
 require_once($CFG->libdir.'/authlib.php');
 
 /**
- * Email authentication plugin.
+ * Email username authentication plugin.
  */
-class auth_plugin_email extends auth_plugin_base {
+class auth_plugin_emailusername extends auth_plugin_base {
 
     /**
      * Constructor.
      */
     public function __construct() {
-        $this->authtype = 'email';
-        $this->config = get_config('auth/email');
+        $this->authtype = 'emailusername';
+        $this->config = get_config('auth/emailusername');
     }
 
     /**
@@ -44,7 +44,7 @@ class auth_plugin_email extends auth_plugin_base {
      *
      * @deprecated since Moodle 3.1
      */
-    public function auth_plugin_email() {
+    public function auth_plugin_emailusername() {
         debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
         self::__construct();
     }
@@ -116,7 +116,7 @@ class auth_plugin_email extends auth_plugin_base {
         \core\event\user_created::create_from_userid($user->id)->trigger();
 
         if (! send_confirmation_email($user)) {
-            print_error('auth_emailnoemail','auth_email');
+            print_error('auth_emailusernamenoemail','auth_emailusername');
         }
 
         if ($notify) {
@@ -240,7 +240,7 @@ class auth_plugin_email extends auth_plugin_base {
         }
 
         // save settings
-        set_config('recaptcha', $config->recaptcha, 'auth/email');
+        set_config('recaptcha', $config->recaptcha, 'auth/emailusername');
         return true;
     }
 

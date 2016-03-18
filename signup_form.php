@@ -17,13 +17,13 @@ class login_signup_form_emailusername extends moodleform {
     function definition() {
         global $USER, $CFG;
         $mform = $this->_form;
-        $mform->addElement('header', 'createuserandpass', get_string('auth_emailusername_signupheader'), '');
+        $mform->addElement('header', 'createuserandpass', get_string('auth_emailusername_signupheader', 'auth_emailusername'), '');
 
-        $mform->addElement('text', 'username', get_string('auth_emailusername_email'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'username', get_string('auth_emailusername_email', 'auth_emailusername'), 'maxlength="100" size="25"');
         $mform->setType('username', PARAM_NOTAGS);
         $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
 
-        $mform->addElement('text', 'email', get_string('auth_emailusername_emailconfirm'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'email', get_string('auth_emailusername_emailconfirm', 'auth_emailusername'), 'maxlength="100" size="25"');
         $mform->setType('username', PARAM_NOTAGS);
         $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
 

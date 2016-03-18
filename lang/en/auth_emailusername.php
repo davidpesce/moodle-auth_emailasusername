@@ -27,4 +27,7 @@ $string['auth_emailusernamenoemail'] = 'Tried to send you an email but failed!';
 $string['auth_emailusernamerecaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
 $string['auth_emailusernamerecaptcha_key'] = 'Enable reCAPTCHA element';
 $string['auth_emailusernamesettings'] = 'Settings';
+$string['auth_emailusername_email'] = 'Email address';
+$string['auth_emailusername_emailconfirm'] = 'Email address (again)';
+$string['auth_emailusername_signupheader'] = 'Fill in the fields below';
 $string['pluginname'] = 'Email-based self-registration - Username is email address';

@@ -21,17 +21,17 @@ class login_signup_form_emailusername extends moodleform {
 
         $mform->addElement('text', 'username', get_string('auth_emailusername_email', 'auth_emailusername'), 'maxlength="100" size="25"');
         $mform->setType('username', PARAM_NOTAGS);
-        $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
+        $mform->addRule('username', get_string('auth_emailusername_emailmissing', 'auth_emailusername'), 'required', null, 'client');
 
         $mform->addElement('text', 'email', get_string('auth_emailusername_emailconfirm', 'auth_emailusername'), 'maxlength="100" size="25"');
-        $mform->setType('username', PARAM_NOTAGS);
-        $mform->addRule('username', get_string('missingusername'), 'required', null, 'client');
+        $mform->setType('email', PARAM_NOTAGS);
+        $mform->addRule('email', get_string('auth_emailusername_emailmissing', 'auth_emailusername'), 'required', null, 'client');
 
         if (!empty($CFG->passwordpolicy)){
             $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
         }
 
-        $mform->addElement('passwordunmask', 'password', get_string('password'), 'maxlength="32" size="12"');
+        $mform->addElement('passwordunmask', 'password', get_string('password'), 'maxlength="32" size="25"');
         $mform->setType('password', PARAM_RAW);
         $mform->addRule('password', get_string('missingpassword'), 'required', null, 'client');
 

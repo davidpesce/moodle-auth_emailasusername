@@ -30,4 +30,5 @@ $string['auth_emailusernamesettings'] = 'Settings';
 $string['auth_emailusername_email'] = 'Email address';
 $string['auth_emailusername_emailconfirm'] = 'Email address (again)';
 $string['auth_emailusername_signupheader'] = 'Fill in the fields below';
+$string['auth_emailusername_emailmissing'] = 'Fill in the fields below';
 $string['pluginname'] = 'Email-based self-registration - Username is email address';

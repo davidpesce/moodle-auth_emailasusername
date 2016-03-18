@@ -138,7 +138,8 @@ class auth_plugin_emailusername extends auth_plugin_base {
      * @return moodle_form A form which edits a record from the user table.
      */
     function signup_form() {
-        require_once('signup_form.php');
+        global $CFG;
+        require_once($CFG->dirroot . "/auth/emailusername/signup_form.php"));
         return new login_signup_form_emailusername(null, null, 'post', '', array('autocomplete'=>'on'));
     }
 

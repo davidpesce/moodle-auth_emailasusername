@@ -139,7 +139,7 @@ class auth_plugin_emailusername extends auth_plugin_base {
      */
     function signup_form() {
         require_once('signup_form.php');
-        return new login_signup_form(null, null, 'post', '', array('autocomplete'=>'on'));
+        return new login_signup_form_emailusername(null, null, 'post', '', array('autocomplete'=>'on'));
     }
 
     /**

@@ -22,6 +22,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['pluginname'] = 'Email-based self-registration with the username as the email address';
 $string['auth_emailasusername_description'] = 'Temporary description...';
 $string['auth_emailasusername_noemail'] = 'Tried to send you an email but failed!';
 $string['auth_emailasusername_recaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
@@ -31,4 +32,3 @@ $string['auth_emailasusername_email'] = 'Email address';
 $string['auth_emailasusername_emailconfirm'] = 'Email address (again)';
 $string['auth_emailasusername_signupheader'] = 'Fill in the fields below';
 $string['auth_emailasusername_emailmissing'] = 'Missing email address';
-$string['pluginname'] = 'Email-based self-registration - Username as email address';

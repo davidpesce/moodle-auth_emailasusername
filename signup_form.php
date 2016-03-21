@@ -5,7 +5,7 @@
  *
  * @copyright  2016 onwards David Pesce (http://exputo.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package auth_emailusername
+ * @package auth_emailasusername
  */
 
 defined('MOODLE_INTERNAL') || die();

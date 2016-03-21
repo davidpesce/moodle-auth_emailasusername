@@ -19,7 +19,7 @@
  *
  * @copyright  2016 onwards David Pesce (http://exputo.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- * @package auth_emailusername
+ * @package auth_emailasusername
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -29,14 +29,14 @@ require_once($CFG->libdir.'/authlib.php');
 /**
  * Email username authentication plugin.
  */
-class auth_plugin_emailusername extends auth_plugin_base {
+class auth_plugin_emailasusername extends auth_plugin_base {
 
     /**
      * Constructor.
      */
     public function __construct() {
-        $this->authtype = 'emailusername';
-        $this->config = get_config('auth/emailusername');
+        $this->authtype = 'emailasusername';
+        $this->config = get_config('auth/emailasusername');
     }
 
     /**
@@ -44,7 +44,7 @@ class auth_plugin_emailusername extends auth_plugin_base {
      *
      * @deprecated since Moodle 3.1
      */
-    public function auth_plugin_emailusername() {
+    public function auth_plugin_emailasusername() {
         debugging('Use of class name as constructor is deprecated', DEBUG_DEVELOPER);
         self::__construct();
     }
@@ -117,7 +117,7 @@ class auth_plugin_emailusername extends auth_plugin_base {
         \core\event\user_created::create_from_userid($user->id)->trigger();
 
         if (! send_confirmation_email($user)) {
-            print_error('auth_emailusernamenoemail','auth_emailusername');
+            print_error('auth_emailasusernamenoemail','auth_emailasusername');
         }
 
         if ($notify) {
@@ -139,8 +139,8 @@ class auth_plugin_emailusername extends auth_plugin_base {
      */
     function signup_form() {
         global $CFG;
-        require_once($CFG->dirroot . "/auth/emailusername/signup_form.php");
-        return new login_signup_form_emailusername(null, null, 'post', '', array('autocomplete'=>'on'));
+        require_once($CFG->dirroot . "/auth/emailasusername/signup_form.php");
+        return new login_signup_form_emailasusername(null, null, 'post', '', array('autocomplete'=>'on'));
     }
 
     /**
@@ -251,7 +251,7 @@ class auth_plugin_emailusername extends auth_plugin_base {
         }
 
         // save settings
-        set_config('recaptcha', $config->recaptcha, 'auth/emailusername');
+        set_config('recaptcha', $config->recaptcha, 'auth/emailasusername');
         return true;
     }
 

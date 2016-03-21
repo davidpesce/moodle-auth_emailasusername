@@ -21,7 +21,7 @@ class login_signup_form_emailasusername extends moodleform {
 
         $mform->addElement('text', 'username', get_string('auth_emailasusername_email', 'auth_emailasusername'), 'maxlength="100" size="35"');
         $mform->setType('username', PARAM_NOTAGS);
-        $mform->addRule('email', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
+        $mform->addRule('username', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
 
         $mform->addElement('text', 'email', get_string('auth_emailasusername_emailconfirm', 'auth_emailasusername'), 'maxlength="100" size="35"');
         $mform->setType('email', PARAM_NOTAGS);

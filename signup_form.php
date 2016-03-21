@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Authentication Plugin: Email Username Authentication
+ * Authentication Plugin: Email As Username Authentication
  *
  * @copyright  2016 onwards David Pesce (http://exputo.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later

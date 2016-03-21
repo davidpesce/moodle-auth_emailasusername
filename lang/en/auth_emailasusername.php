@@ -23,7 +23,7 @@
  */
 
 $string['pluginname'] = 'Email-based self-registration with the username as the email address';
-$string['auth_emailasusername_description'] = 'Temporary description...';
+$string['auth_emailasusernamedescription'] = 'Temporary description...';
 $string['auth_emailasusername_noemail'] = 'Tried to send you an email but failed!';
 $string['auth_emailasusername_recaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
 $string['auth_emailasusername_recaptcha_key'] = 'Enable reCAPTCHA element';

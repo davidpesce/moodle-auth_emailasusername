@@ -19,11 +19,11 @@ class login_signup_form_emailasusername extends moodleform {
         $mform = $this->_form;
         $mform->addElement('header', 'createuserandpass', get_string('auth_emailasusername_signupheader', 'auth_emailasusername'), '');
 
-        $mform->addElement('text', 'username', get_string('auth_emailasusername_email', 'auth_emailasusername'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'username', get_string('auth_emailasusername_email', 'auth_emailasusername'), 'maxlength="100" size="35"');
         $mform->setType('username', PARAM_NOTAGS);
         $mform->addRule('username', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
 
-        $mform->addElement('text', 'email', get_string('auth_emailasusername_emailconfirm', 'auth_emailasusername'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'email', get_string('auth_emailasusername_emailconfirm', 'auth_emailasusername'), 'maxlength="100" size="35"');
         $mform->setType('email', PARAM_NOTAGS);
         $mform->addRule('email', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
 
@@ -31,13 +31,13 @@ class login_signup_form_emailasusername extends moodleform {
             $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());
         }
 
-        $mform->addElement('passwordunmask', 'password', get_string('password'), 'maxlength="32" size="25"');
+        $mform->addElement('passwordunmask', 'password', get_string('password'), 'maxlength="32" size="35"');
         $mform->setType('password', PARAM_RAW);
         $mform->addRule('password', get_string('missingpassword'), 'required', null, 'client');
 
         $namefields = useredit_get_required_name_fields();
         foreach ($namefields as $field) {
-            $mform->addElement('text', $field, get_string($field), 'maxlength="100" size="30"');
+            $mform->addElement('text', $field, get_string($field), 'maxlength="100" size="35"');
             $mform->setType($field, PARAM_NOTAGS);
             $stringid = 'missing' . $field;
             if (!get_string_manager()->string_exists($stringid, 'moodle')) {

@@ -37,6 +37,7 @@ class auth_plugin_emailasusername extends auth_plugin_base {
     public function __construct() {
         $this->authtype = 'emailasusername';
         $this->config = get_config('auth/emailasusername');
+        $this->title = get_string('pluginname', 'auth_emailasusername');
     }
 
     /**

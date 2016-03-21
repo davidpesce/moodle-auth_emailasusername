@@ -118,7 +118,7 @@ class auth_plugin_emailasusername extends auth_plugin_base {
         \core\event\user_created::create_from_userid($user->id)->trigger();
 
         if (! send_confirmation_email($user)) {
-            print_error('auth_emailasusernamenoemail','auth_emailasusername');
+            print_error('auth_emailasusername_noemail','auth_emailasusername');
         }
 
         if ($notify) {

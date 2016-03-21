@@ -17,15 +17,15 @@ class login_signup_form_emailusername extends moodleform {
     function definition() {
         global $USER, $CFG;
         $mform = $this->_form;
-        $mform->addElement('header', 'createuserandpass', get_string('auth_emailusername_signupheader', 'auth_emailusername'), '');
+        $mform->addElement('header', 'createuserandpass', get_string('auth_emailasusername_signupheader', 'auth_emailasusername'), '');
 
-        $mform->addElement('text', 'username', get_string('auth_emailusername_email', 'auth_emailusername'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'username', get_string('auth_emailasusername_email', 'auth_emailasusername'), 'maxlength="100" size="25"');
         $mform->setType('username', PARAM_NOTAGS);
-        $mform->addRule('username', get_string('auth_emailusername_emailmissing', 'auth_emailusername'), 'required', null, 'client');
+        $mform->addRule('username', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
 
-        $mform->addElement('text', 'email', get_string('auth_emailusername_emailconfirm', 'auth_emailusername'), 'maxlength="100" size="25"');
+        $mform->addElement('text', 'email', get_string('auth_emailasusername_emailconfirm', 'auth_emailasusername'), 'maxlength="100" size="25"');
         $mform->setType('email', PARAM_NOTAGS);
-        $mform->addRule('email', get_string('auth_emailusername_emailmissing', 'auth_emailusername'), 'required', null, 'client');
+        $mform->addRule('email', get_string('auth_emailasusername_emailmissing', 'auth_emailasusername'), 'required', null, 'client');
 
         if (!empty($CFG->passwordpolicy)){
             $mform->addElement('static', 'passwordpolicyinfo', '', print_password_policy());

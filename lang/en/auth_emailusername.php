@@ -22,13 +22,13 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['auth_emailasusernamedescription'] = '<p>Email-based self-registration enables a user to create their own account via a \'Create new account\' button on the login page. The user then receives an email containing a secure link to a page where they can confirm their account. Future logins just check the username and password against the stored values in the Moodle database.</p><p>Note: In addition to enabling the plugin, email-based self-registration must also be selected from the self registration drop-down menu on the \'Manage authentication\' page.</p>';
-$string['auth_emailasusernamenoemail'] = 'Tried to send you an email but failed!';
-$string['auth_emailasusernamerecaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
-$string['auth_emailasusernamerecaptcha_key'] = 'Enable reCAPTCHA element';
-$string['auth_emailasusernamesettings'] = 'Settings';
+$string['auth_emailasusername_description'] = '<p>Email-based self-registration enables a user to create their own account via a \'Create new account\' button on the login page. The user then receives an email containing a secure link to a page where they can confirm their account. Future logins just check the username and password against the stored values in the Moodle database.</p><p>Note: In addition to enabling the plugin, email-based self-registration must also be selected from the self registration drop-down menu on the \'Manage authentication\' page.</p>';
+$string['auth_emailasusername_noemail'] = 'Tried to send you an email but failed!';
+$string['auth_emailasusername_recaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
+$string['auth_emailasusername_recaptcha_key'] = 'Enable reCAPTCHA element';
+$string['auth_emailasusername_settings'] = 'Settings';
 $string['auth_emailasusername_email'] = 'Email address';
 $string['auth_emailasusername_emailconfirm'] = 'Email address (again)';
 $string['auth_emailasusername_signupheader'] = 'Fill in the fields below';
-$string['auth_emailasusername_emailmissing'] = 'Fill in the fields below';
-$string['pluginname'] = 'Email-based self-registration - Username is email address';
+$string['auth_emailasusername_emailmissing'] = 'Missing email address';
+$string['pluginname'] = 'Email-based self-registration - Username as email address';

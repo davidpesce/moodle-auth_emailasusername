@@ -12,16 +12,16 @@
 <table cellspacing="0" cellpadding="5" border="0">
 <tr>
    <td colspan="3">
-        <h2 class="main"><?php print_string('auth_emailsettings', 'auth_emailusername') ?> </h2>
+        <h2 class="main"><?php print_string('auth_emailasusername_settings', 'auth_emailasusername') ?> </h2>
    </td>
 </tr>
 <tr>
-    <td align="right"><label for="menurecaptcha"><?php print_string('auth_emailrecaptcha_key', 'auth_emailusername') ?></label></td>
+    <td align="right"><label for="menurecaptcha"><?php print_string('auth_emailasusername_recaptcha_key', 'auth_emailasusername') ?></label></td>
     <td><?php
         global $OUTPUT;
         echo html_writer::select($yesno, 'recaptcha', $config->recaptcha, false);
         ?></td>
-    <td><?php print_string('auth_emailrecaptcha', 'auth_emailusername') ?></td>
+    <td><?php print_string('auth_emailasusername_recaptcha', 'auth_emailasusername') ?></td>
 </tr>
 <?php
 

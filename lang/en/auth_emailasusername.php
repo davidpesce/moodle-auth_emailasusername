@@ -23,7 +23,7 @@
  */
 
 $string['pluginname'] = 'Email-based self-registration with the username as the email address';
-$string['auth_emailasusernamedescription'] = '<p>Email-based self-registration enables a user to create their own account via a \'Create new account\' button on the login page. The user then receives an email containing a secure link to a page where they can confirm their account. Future logins just check the username and password against the stored values in the Moodle database.</p><p>Note: In addition to enabling the plugin, "email-based self-registration with the username as email address" must also be selected from the self registration drop-down menu on the \'Manage authentication\' page.</p>';
+$string['auth_emailasusername_description'] = '<p>Email-based self-registration enables a user to create their own account via a \'Create new account\' button on the login page. The user then receives an email containing a secure link to a page where they can confirm their account. Future logins just check the username and password against the stored values in the Moodle database.</p><p>Note: In addition to enabling the plugin, "email-based self-registration with the username as email address" must also be selected from the self registration drop-down menu on the \'Manage authentication\' page.</p>';
 $string['auth_emailasusername_noemail'] = 'Tried to send you an email but failed!';
 $string['auth_emailasusername_recaptcha'] = 'Adds a visual/audio confirmation form element to the sign-up page for email self-registering users. This protects your site against spammers and contributes to a worthwhile cause. See http://www.google.com/recaptcha for more details.';
 $string['auth_emailasusername_recaptcha_key'] = 'Enable reCAPTCHA element';

@@ -1,5 +1,7 @@
 # moodle-auth_emailasusername
 Moodle plugin to provide email self-registration with the email address as the username.
 
-Master branch works with Moodle 3.2+
-For earlier versions of Moodle, see MOODLE_30_STABLE branch.
+## Moodle Version Support:
+* Moodle 3.3 - Master branch
+* Moodle 3.0 - 3.2 - see MOODLE_32_STABLE branch
+* Moodle 2.9 (and before) - MOODLE_30_STABLE branch

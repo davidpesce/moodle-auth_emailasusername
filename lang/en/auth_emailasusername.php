@@ -30,5 +30,6 @@ $string['auth_emailasusername_recaptcha_key'] = 'Enable reCAPTCHA element';
 $string['auth_emailasusername_settings'] = 'Settings';
 $string['auth_emailasusername_email'] = 'Email address';
 $string['auth_emailasusername_emailconfirm'] = 'Email address (again)';
-$string['auth_emailasusername_signupheader'] = 'Fill in the fields below';
 $string['auth_emailasusername_emailmissing'] = 'Missing email address';
+$string['auth_emailasusername_emailmismatch'] = 'Email addresses do not match';
+$string['privacy:metadata'] = 'The Email-based self-registration authentication plugin does not store any personal data.';

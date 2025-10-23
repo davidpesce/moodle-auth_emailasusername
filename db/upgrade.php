@@ -16,12 +16,6 @@ defined('MOODLE_INTERNAL') || die();
 function xmldb_auth_emailasusername_upgrade($oldversion) {
     global $CFG, $DB;
 
-    if ($oldversion < 2017020700) {
-        // Convert info in config plugins from auth/email to auth_email.
-        $DB->set_field('config_plugins', 'plugin', 'auth_emailasusername', array('plugin' => 'auth/emailasusername'));
-        upgrade_plugin_savepoint(true, 2017020700, 'auth', 'emailasusername');
-    }
-
     if ($oldversion < 2024102300) {
         // No database changes needed for Moodle 4.5+ compatibility update.
         // This version adds privacy API compliance and coding standards improvements.
